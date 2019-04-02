@@ -1,0 +1,146 @@
+@import url(./layout.css);
+header {
+  background: rgb(243, 203, 54);
+}
+
+header>div {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1rem 1.0875rem;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  flex-grow: 1;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  flex-grow: 0;
+  text-transform: uppercase;
+}
+
+header nav a {
+  color: black;
+  text-decoration: none;
+  flex-grow: 1;
+  min-width: 6rem;
+  padding: 5px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+header nav a::after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #000;
+  width: 0px;
+  margin: 0 auto;
+  transition: 0.3s width ease-out;
+}
+
+header nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+header nav a:hover::after {
+  width: 95%;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+section.hero {
+  position: relative;
+  height: 200px;
+  background: rgb(128, 203, 214);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.hero::before {
+  content: '';
+  filter: blur(5px);
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+}
+
+section.hero h2 {
+  margin: 0 auto;
+  padding: 0 1rem 0.3rem;
+  font-size: 4rem;
+  border-bottom: 3px solid white;
+}
+
+section.hero p.subtitle {
+  margin: 0.3rem auto 0;
+  font-size: 2.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+section.content {
+  background: #FFF;
+  color: black;
+  text-align: center;
+}
+
+main>section.content {
+  border-bottom: 1px solid #EEE;
+}
+
+.content-image {
+  border-radius: 50%;
+  box-shadow: 0px 3px 5px #ccc;
+  margin: 2rem auto 0;
+}
+
+.content-desc {
+  margin: 1rem auto;
+  max-width: 960px;
+}
+
+section.content h2 {
+  padding: 0 0.5rem 0.3rem;
+  margin: 1rem auto;
+  display: inline-block;
+  border-bottom: 2px solid black;
+}
+
+section.content h3 {
+  margin: 1rem 0;
+}
+
+.content-photos {
+  background: #CCC;
+  padding: 10px 0;
+}
+.content-photos>div {
+  margin: 0 auto;
+  max-width: 960px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.hori-sections {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
