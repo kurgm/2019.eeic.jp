@@ -38,9 +38,9 @@ const IndexPage = ({data}) => (
             </p>
           </Section>
         </Link>
-        <Link to="/exhibition/" className="block-link">
+        <Link to="/vtuber/" className="block-link">
           <Section headImage={data.headImage}>
-            <h3>cc</h3>
+            <h3>VTuber</h3>
           </Section>
         </Link>
       </div>
@@ -49,7 +49,7 @@ const IndexPage = ({data}) => (
 )
 
 export const query = graphql`
-  query IndexPageQuery {
+  query {
     headImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
       ...SectionHeadImage
     }

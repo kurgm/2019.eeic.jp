@@ -172,6 +172,7 @@ section.content h3 {
 .block-link {
   display: block;
   text-decoration: none;
+  color: inherit;
   position: relative;
   transition: transform 0.15s, box-shadow 0.15s;
   transform-origin: center center;

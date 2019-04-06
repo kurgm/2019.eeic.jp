@@ -35,6 +35,7 @@ const Header = ({ siteTitle }) => (
           <nav>
             <Link to="/exhibition/">Exhibition</Link>
             <Link to="/workshop/">Workshop</Link>
+            <Link to="/vtuber/">VTuber</Link>
           </nav>
         </div>
       </header>
