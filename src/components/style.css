@@ -85,22 +85,22 @@ main {
 section.hero {
   position: relative;
   height: 200px;
-  background: rgb(128, 203, 214);
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
-section.hero::before {
-  content: '';
-  filter: blur(5px);
-  position: absolute;
-  top: -5px;
-  bottom: -5px;
-  left: -5px;
-  right: -5px;
+.hero-blur {
+  position: absolute !important;
+  z-index: -1;
+  filter: blur(3px);
+  top: -3px;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
 }
 
 section.hero h2 {
