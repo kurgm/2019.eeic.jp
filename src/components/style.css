@@ -6,7 +6,7 @@ header {
   left: 0;
   right: 0;
   z-index: 1;
-  height: 80px;
+  height: 70px;
   box-shadow: 0 5px 10px rgba(0,0,0, 0.1);
 }
 
@@ -26,12 +26,16 @@ header h1 {
 }
 
 header h1 a {
+  display: inline-block;
+}
+
+.header-logo {
   display: flex;
   align-items: center;
 }
 
 .header-icon {
-  margin-right: 0.5rem;
+  margin-right: 0.6rem;
 }
 
 header a {
@@ -71,10 +75,11 @@ header nav a:hover::after {
 footer {
   text-align: center;
   font-size: 0.8rem;
+  margin: 0.8rem 0;
 }
 
 main {
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 section.hero {
@@ -130,6 +135,7 @@ main>section.content {
 
 .content-desc {
   margin: 1rem auto;
+  width: 90%;
   max-width: 960px;
 }
 
@@ -141,7 +147,7 @@ section.content h2 {
 }
 
 section.content h3 {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .content-photos {

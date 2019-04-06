@@ -40,7 +40,7 @@ export default Section
 export const query = graphql`
   fragment SectionHeadImage on File {
     childImageSharp {
-      fixed(width: 130, height: 130) {
+      fixed(width: 180, height: 180) {
         ...GatsbyImageSharpFixed
       }
     }

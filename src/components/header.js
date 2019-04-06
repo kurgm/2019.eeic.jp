@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
       query {
         iconImage: file(relativePath: { eq: "eeic-black.png" }) {
           childImageSharp {
-            fixed(height: 50) {
+            fixed(height: 45) {
               ...GatsbyImageSharpFixed
             }
           }
@@ -21,12 +21,14 @@ const Header = ({ siteTitle }) => (
         <div>
           <h1>
             <Link to="/">
-              <Img
-                fixed={data.iconImage.childImageSharp.fixed}
-                className="header-icon"
-              />
-              <div>
-                {siteTitle}
+              <div className="header-logo">
+                <Img
+                  fixed={data.iconImage.childImageSharp.fixed}
+                  className="header-icon"
+                />
+                <div>
+                  {siteTitle}
+                </div>
               </div>
             </Link>
           </h1>
