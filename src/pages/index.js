@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -22,15 +22,24 @@ const IndexPage = ({data}) => (
     <Section>
       <h2>Contents</h2>
       <div className="hori-sections">
-        <Section headImage={data.headImage}>
-          <h3>aa</h3>
-        </Section>
-        <Section headImage={data.headImage}>
-          <h3>bb</h3>
-        </Section>
-        <Section headImage={data.headImage}>
-          <h3>cc</h3>
-        </Section>
+        <Link to="/exhibition/" className="block-link">
+          <Section headImage={data.headImage}>
+            <h3>展示</h3>
+            <p>
+              学生制作物展示ではEEICの学生が授業で作成した面白いメカを展示します。研究室展示ではEEICで行われる最先端の研究についてわかりやすくご紹介します。
+            </p>
+          </Section>
+        </Link>
+        <Link to="/exhibition/" className="block-link">
+          <Section headImage={data.headImage}>
+            <h3>bb</h3>
+          </Section>
+        </Link>
+        <Link to="/exhibition/" className="block-link">
+          <Section headImage={data.headImage}>
+            <h3>cc</h3>
+          </Section>
+        </Link>
       </div>
     </Section>
   </Layout>
