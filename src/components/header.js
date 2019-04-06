@@ -31,18 +31,7 @@ const Header = ({ siteTitle }) => (
             </Link>
           </h1>
           <nav>
-            <Link to="/page-2/">
-              Page two
-            </Link>
-            <Link to="/page-2/">
-              Page two
-            </Link>
-            <Link to="/page-2/">
-              Page two
-            </Link>
-            <Link to="/page-2/">
-              Page two
-            </Link>
+            <Link to="/exhibition/">Exhibition</Link>
           </nav>
         </div>
       </header>
