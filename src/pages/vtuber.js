@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+// import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,9 +10,7 @@ const VTuberPage = ({data}) => (
   <Layout>
     <SEO title="バーチャルYouTuber" />
     <Hero pageTitle="バーチャルYouTuber" pageSubtitle="Virtual YouTuber" />
-    <Section
-      headImage={data.vtuberHeadImage}
-    >
+    <Section>
       <h3>VTuber体験</h3>
       <dl>
         <dt>場所</dt>
@@ -26,12 +24,12 @@ const VTuberPage = ({data}) => (
   </Layout>
 )
 
-export const query = graphql`
-  query {
-    vtuberHeadImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-      ...SectionHeadImage
-    }
-  }
-`
+// export const query = graphql`
+//   query {
+//     vtuberHeadImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+//       ...SectionHeadImage
+//     }
+//   }
+// `
 
 export default VTuberPage

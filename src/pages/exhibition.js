@@ -96,7 +96,7 @@ const labExhibitions = [
 
 export const query = graphql`
   query {
-    bdmHeadImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+    bdmHeadImage: file(relativePath: { eq: "bdm/じゃんけんマシン.jpg" }) {
       ...SectionHeadImage
     }
     bdmPhotos: allFile(filter: {relativeDirectory: {eq: "bdm"}}) {
@@ -107,7 +107,7 @@ export const query = graphql`
         }
       }
     }
-    labHeadImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+    labHeadImage: file(relativePath: { eq: "lab/kawahara.jpg" }) {
       ...SectionHeadImage
     }
     labPhotos: allFile(filter: {relativeDirectory: {eq: "lab"}}) {

@@ -57,7 +57,7 @@ const IndexPage = ({data}) => {
             </Section>
           </Link>
           <Link to="/vtuber/" className="block-link">
-            <Section headImage={data.vtuberImage}>
+            <Section>
               <h3>VTuber</h3>
             </Section>
           </Link>
@@ -107,15 +107,15 @@ const IndexPage = ({data}) => {
 
 export const query = graphql`
   query {
-    exhibitionImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+    exhibitionImage: file(relativePath: { eq: "lab/kawahara.jpg" }) {
       ...SectionHeadImage
     }
-    workshopImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+    workshopImage: file(relativePath: { eq: "workshop/programming.jpg" }) {
       ...SectionHeadImage
     }
-    vtuberImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-      ...SectionHeadImage
-    }
+    # vtuberImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+    #   ...SectionHeadImage
+    # }
     linkImage: allFile(filter: {relativeDirectory: {eq: "link"}}) {
       edges {
         node {

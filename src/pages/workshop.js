@@ -79,10 +79,10 @@ const WorkshopPage = ({data}) => {
 
 export const query = graphql`
   query {
-    progHeadImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+    progHeadImage: file(relativePath: { eq: "workshop/programming2.png" }) {
       ...SectionHeadImage
     }
-    eworkHeadImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+    eworkHeadImage: file(relativePath: { eq: "workshop/ework3.png" }) {
       ...SectionHeadImage
     }
     photos: allFile(filter: {relativeDirectory: {eq: "workshop"}}) {
