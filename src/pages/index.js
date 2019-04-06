@@ -30,9 +30,12 @@ const IndexPage = ({data}) => (
             </p>
           </Section>
         </Link>
-        <Link to="/exhibition/" className="block-link">
+        <Link to="/workshop/" className="block-link">
           <Section headImage={data.headImage}>
-            <h3>bb</h3>
+            <h3>ワークショップ</h3>
+            <p>
+              電子工作教室、プログラミング教室の2つのワークショップを設けています。理系の中でも工学部、とりわけEEICでは「モノを創る」ことに重きを置いています。それぞれのワークショップで物作りという学校の勉強とは趣の異なる体験を子どもも大人の方もお楽しみください。
+            </p>
           </Section>
         </Link>
         <Link to="/exhibition/" className="block-link">

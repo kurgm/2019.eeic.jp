@@ -19,7 +19,7 @@ const Section = ({ headImage, photos, children }) => (
               objectPosition="50% 50%"
             />
           </div>
-          <div>{title}</div>
+          {title && <div>{title}</div>}
         </div>)}
       </div>
     </div>}
@@ -30,7 +30,7 @@ Section.propTypes = {
   headImage: PropTypes.any,
   photos: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
-    image: PropTypes.any,
+    image: PropTypes.any.isRequired,
   })),
   children: PropTypes.node,
 }
