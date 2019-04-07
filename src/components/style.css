@@ -141,6 +141,15 @@ section.hero.index-hero h2 {
   letter-spacing: 0.3rem;
 }
 
+@media screen and (max-width: 600px) {
+  section.hero.long-hero h2 {
+    font-size: 1.5rem;
+  }
+  section.hero.long-hero p.subtitle {
+    font-size: 1.2rem;
+  }
+}
+
 section.content {
   background: #FFF;
   color: black;

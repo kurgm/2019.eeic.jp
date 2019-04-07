@@ -8,8 +8,12 @@ import Section from "../components/section"
 
 const VTuberPage = ({data}) => (
   <Layout>
-    <SEO title="バーチャルYouTuber" />
-    <Hero pageTitle="バーチャルYouTuber" pageSubtitle="Virtual YouTuber" />
+    <SEO title="バーチャルYouTuber企画" />
+    <Hero
+      pageTitle="バーチャルYouTuber企画"
+      pageSubtitle="Virtual YouTuber"
+      className="long-hero"
+    />
     <Section>
       <h3>VTuber体験</h3>
       <dl>
