@@ -7,7 +7,7 @@ header {
   right: 0;
   z-index: 1;
   height: 70px;
-  box-shadow: 0 5px 10px rgba(0,0,0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 header>div {
@@ -76,6 +76,7 @@ footer {
   text-align: center;
   font-size: 0.8rem;
   margin: 0.8rem 0;
+  padding: 0 0.8rem;
 }
 
 main {
@@ -113,9 +114,31 @@ section.hero h2 {
 
 section.hero p.subtitle {
   margin: 0.8rem auto 0;
+  padding: 0 1rem;
   font-size: 1.6rem;
   line-height: 1;
   text-transform: uppercase;
+}
+
+section.hero.index-hero {
+  height: 400px;
+}
+
+.index-logo {
+  margin: 1rem auto;
+}
+
+section.hero.index-hero p {
+  font-size: 1.1rem;
+  padding: 0 1rem;
+  font-weight: bold;
+}
+
+section.hero.index-hero h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+  font-size: 3.5rem;
+  letter-spacing: 0.3rem;
 }
 
 section.content {
@@ -130,7 +153,7 @@ main>section.content {
 
 .content-image {
   border-radius: 50%;
-  box-shadow: 0px 3px 5px rgba(0,0,0, 0.2);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   margin: 2rem auto 0;
 }
 
@@ -140,21 +163,28 @@ main>section.content {
   max-width: 960px;
 }
 
+main>section>.content-desc {
+  margin-bottom: 2.5rem;
+}
+
 section.content h2 {
   padding: 0 0.5rem 0.3rem;
   margin: 1rem auto;
   display: inline-block;
   border-bottom: 2px solid black;
+  letter-spacing: 0.05rem;
 }
 
 section.content h3 {
   margin: 1.5rem 0;
+  letter-spacing: 0.05rem;
 }
 
 .content-photos {
   background: #EEE;
   padding: 3rem 0;
 }
+
 .content-photos>div {
   margin: 0 auto;
   max-width: 960px;
@@ -167,7 +197,7 @@ section.content h3 {
 .hori-sections {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .block-link {
@@ -177,12 +207,12 @@ section.content h3 {
   position: relative;
   transition: transform 0.15s, box-shadow 0.15s;
   transform-origin: center center;
-  box-shadow: 0 0 0 rgba(0,0,0, 0.1);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .block-link:hover {
   transform: scale(1.02);
-  box-shadow: 0 2px 5px rgba(0,0,0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .gmap {
@@ -203,5 +233,8 @@ section.content h3 {
 @media only screen and (max-width: 768px) {
   header nav {
     display: none;
+  }
+  section.hero.index-hero h2 {
+    font-size: 2.5rem;
   }
 }

@@ -3,7 +3,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 
-const Hero = ({ pageTitle, pageSubtitle, height, children }) => (
+const Hero = ({ pageTitle, pageSubtitle, className, children }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -17,7 +17,7 @@ const Hero = ({ pageTitle, pageSubtitle, height, children }) => (
       }
     `}
     render={data => (
-      <section className="hero" style={{height}}>
+      <section className={`hero ${className || ``}`}>
         <BackgroundImage
           className="hero-blur"
           fluid={data.bgimage.childImageSharp.fluid}
@@ -42,12 +42,12 @@ Hero.propTypes = {
   pageSubtitle: PropTypes.string,
   height: PropTypes.string,
   children: PropTypes.node,
+  className: PropTypes.string,
 }
 
 Hero.defaultProps = {
   pageTitle: ``,
   pageSubtitle: ``,
-  height: `200px`,
 }
 
 export default Hero

@@ -13,7 +13,8 @@ const IndexPage = ({data}) => {
   return (
     <Layout>
       <SEO keywords={[`近未来体験`, `五月祭`, `EEIC`, `電子情報工学科`, `電気電子工学科`, `東京大学`, `電子工作`, `プログラミング`, `VTuber`]} />
-      <Hero height="400px">
+      <Hero className="index-hero">
+        <div className="index-logo"><Img fixed={data.topLogo.childImageSharp.fixed} /></div>
         <p>東京大学工学部 電子情報工学科・電気電子工学科 五月祭展示</p>
         <h2>近未来体験2019</h2>
       </Hero>
@@ -108,6 +109,13 @@ const IndexPage = ({data}) => {
 
 export const query = graphql`
   query {
+    topLogo: file(relativePath: { eq: "eeic-white.png" }) {
+      childImageSharp {
+        fixed(height: 90) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
     exhibitionImage: file(relativePath: { eq: "lab/kawahara.jpg" }) {
       ...SectionHeadImage
     }
