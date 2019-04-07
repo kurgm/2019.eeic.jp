@@ -80,10 +80,8 @@ const IndexPage = ({data}) => {
           <iframe
             title="東京大学本郷キャンパス 工学部2・3・13号館"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.486358958482!2d139.76097665805472!3d35.71474799504667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQyJzUzLjEiTiAxMznCsDQ1JzQzLjUiRQ!5e0!3m2!1sja!2sjp!4v1554554790604!5m2!1sja!2sjp"
-            width="600"
-            height="450"
+            className="gmap"
             frameBorder="0"
-            style={{ border: `0` }}
             allowFullScreen
           />
         </div>
@@ -93,7 +91,10 @@ const IndexPage = ({data}) => {
         <div className="ext-link">
           <a href="http://ut-mech.com/2018/" className="block-link">
             <div>
-              <Img fixed={linkImageMap.mech.childImageSharp.fixed} />
+              <Img
+                fixed={linkImageMap.mech.childImageSharp.fixed}
+                className="extlink-image"
+              />
             </div>
             <div className="extlink-title">
               工学部機械工学科・機械情報工学科
