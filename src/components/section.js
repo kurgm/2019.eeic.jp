@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import Img from "gatsby-image"
-import { graphql } from "gatsby";
+import { graphql } from "gatsby"
 
 const Section = ({ headImage, photos, children }) => (
   <section className="content">
@@ -11,7 +11,7 @@ const Section = ({ headImage, photos, children }) => (
     </div>
     {photos && photos.length !== 0 && <div className="content-photos">
       <div>
-        {photos.map(({title, image}) => <div>
+        {photos.map(({title, image}, i) => <div key={i}>
           <div>
             <Img
               fixed={image.childImageSharp.fixed}
