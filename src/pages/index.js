@@ -15,16 +15,39 @@ const IndexPage = ({data}) => {
       <SEO keywords={[`近未来体験`, `五月祭`, `EEIC`, `電子情報工学科`, `電気電子工学科`, `東京大学`, `電子工作`, `プログラミング`, `VTuber`]} />
       <Hero className="index-hero">
         <div className="index-logo"><Img fixed={data.topLogo.childImageSharp.fixed} /></div>
-        <p>東京大学工学部 電子情報工学科・電気電子工学科 五月祭展示</p>
-        <h2>近未来体験2019</h2>
+        <p>
+          東京大学工学部
+          <br className="mobile-on" />
+          {` `}
+          電子情報工学科・電気電子工学科
+          <br className="mobile-on" />
+          {` `}
+          五月祭展示</p>
+        <h2>
+          近未来体験
+          <br className="narrow-on" />
+          2019
+        </h2>
       </Hero>
       <Section>
         <h2>About</h2>
         <p>
-          「近未来体験2019」は電子情報工学科・電気電子工学科の学生が主催する五月祭展示企画のことです。 幅広い分野の最先端の研究や、学生がオリジナルに制作したメカやゲームを見て聞いて体験していただけます。
+          「近未来体験2019」は電子情報工学科・電気電子工学科の学生が主催する
+          <br className="middle-on" />
+          五月祭展示企画のことです。
+          <br className="mobile-off" />
+          幅広い分野の最先端の研究や、学生がオリジナルに制作したメカやゲームを
+          <br className="middle-on" />
+          見て聞いて体験していただけます。
         </p>
         <p>
-          電気・電子・情報に興味のある大学生や高校生はもちろん、「東大の学問・研究を感じたい」という大人の方、「なにか五月祭で面白い体験をしたい」という家族連れ、小中学生も大歓迎です♪
+          電気・電子・情報に興味のある大学生や高校生はもちろん、
+          <br className="middle-on" />
+          「東大の学問・研究を感じたい」という大人の方、
+          <br className="mobile-off" />
+          「なにか五月祭で面白い体験をしたい」という家族連れ、
+          <br className="middle-on" />
+          小中学生も大歓迎です♪
         </p>
         <p>
           ぜひとも気軽にご来場ください！

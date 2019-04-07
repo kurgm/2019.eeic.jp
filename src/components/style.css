@@ -198,6 +198,11 @@ section.content h3 {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  font-size: 0.9rem;
+}
+
+.hori-sections .content-desc p {
+  text-align: left;
 }
 
 .block-link {
@@ -230,11 +235,36 @@ section.content h3 {
   font-size: 0.9rem;
 }
 
+br.middle-on, br.mobile-on, br.narrow-on {
+  display: none;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  br.middle-on {
+    display: inline;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   header nav {
     display: none;
   }
   section.hero.index-hero h2 {
     font-size: 2.5rem;
+  }
+  .content-desc p {
+    text-align: left;
+  }
+  br.mobile-off {
+    display: none;
+  }
+  br.mobile-on {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  br.narrow-on {
+    display: inline;
   }
 }
