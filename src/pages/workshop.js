@@ -16,7 +16,6 @@ const WorkshopPage = ({data}) => {
       headImage={data.progHeadImage}
       photos={[
         { image: photoMap.programming },
-        { image: photoMap.programming2 },
       ]}
     >
       <h3>プログラミング教室</h3>
@@ -44,9 +43,9 @@ const WorkshopPage = ({data}) => {
     <Section
       headImage={data.eworkHeadImage}
       photos={[
+        { image: photoMap.ework },
         { image: photoMap.ework1 },
         { image: photoMap.ework2 },
-        { image: photoMap.ework3 },
       ]}
     >
       <h3>電子工作教室</h3>
@@ -79,10 +78,10 @@ const WorkshopPage = ({data}) => {
 
 export const query = graphql`
   query {
-    progHeadImage: file(relativePath: { eq: "workshop/programming2.png" }) {
+    progHeadImage: file(relativePath: { eq: "programming.jpg" }) {
       ...SectionHeadImage
     }
-    eworkHeadImage: file(relativePath: { eq: "workshop/ework3.png" }) {
+    eworkHeadImage: file(relativePath: { eq: "ework.png" }) {
       ...SectionHeadImage
     }
     photos: allFile(filter: {relativeDirectory: {eq: "workshop"}}) {
