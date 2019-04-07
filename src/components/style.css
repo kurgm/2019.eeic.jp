@@ -268,3 +268,12 @@ br.middle-on, br.mobile-on, br.narrow-on {
     display: inline;
   }
 }
+
+@media only screen and (max-height: 600px) {
+  header {
+    height: 60px;
+  }
+  main {
+    margin-top: 60px;
+  }
+}

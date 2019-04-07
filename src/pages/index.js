@@ -57,7 +57,9 @@ const IndexPage = ({data}) => {
           <dt>場所</dt><dd>
             東京大学本郷キャンパス
             <br/>
-            工学部2号館2階フォーラム（案内デスク）
+            工学部2号館2階フォーラム
+            <br className="narrow-on" />
+            （案内デスク）
           </dd>
         </dl>
       </Section>
@@ -91,7 +93,10 @@ const IndexPage = ({data}) => {
         <h2>アクセス</h2>
         <dl>
           <dt>会場</dt><dd>
-            東京大学本郷キャンパス 工学部2・3・13号館
+            東京大学本郷キャンパス
+            <br className="narrow-on" />
+            {` `}
+            工学部2・3・13号館
             <br/>
             本郷三丁目駅から徒歩17分
             <br/>
