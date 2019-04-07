@@ -13,11 +13,7 @@ const Section = ({ headImage, photos, children }) => (
       <div>
         {photos.map(({title, image}, i) => <div key={i}>
           <div>
-            <Img
-              fixed={image.childImageSharp.fixed}
-              objectFit="cover"
-              objectPosition="50% 50%"
-            />
+            <Img fixed={image.childImageSharp.fixed} />
           </div>
           {title && <div>{title}</div>}
         </div>)}
@@ -40,14 +36,14 @@ export default Section
 export const query = graphql`
   fragment SectionHeadImage on File {
     childImageSharp {
-      fixed(width: 180, height: 180) {
+      fixed(width: 180, height: 180, cropFocus: CENTER) {
         ...GatsbyImageSharpFixed
       }
     }
   }
   fragment ContentPhotoImage on File {
     childImageSharp {
-      fixed(width: 300, height: 225) {
+      fixed(width: 300, height: 225, cropFocus: CENTER) {
         ...GatsbyImageSharpFixed
       }
     }
