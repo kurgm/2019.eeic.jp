@@ -144,7 +144,7 @@ export const query = graphql`
         }
       }
     }
-    exhibitionImage: file(relativePath: { eq: "lab/kawahara.jpg" }) {
+    exhibitionImage: file(relativePath: { eq: "bdm/じゃんけんマシン.jpg" }) {
       ...SectionHeadImage
     }
     workshopImage: file(relativePath: { eq: "workshop/ework.jpg" }) {

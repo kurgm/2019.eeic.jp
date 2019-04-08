@@ -35,7 +35,7 @@ const ExhibitionPage = ({data}) => {
       </dl>
     </Section>
     <Section
-      headImage={data.labHeadImage}
+      // headImage={data.labHeadImage}
       photos={labExhibitions.map(({title, image}) => ({ title, image: labPhotoMap[image] }))}
     >
       <h3>研究室展示</h3>
@@ -78,20 +78,6 @@ const bdmWorks = [
 ]
 
 const labExhibitions = [
-  { title: `銀ナノインクワークショップ`, image: `kawahara` },
-  { title: `食事認識アプリ・AIメイクアプリ`, image: `Aizawa` },
-  { title: `知の情報処理`, image: `tsuruoka` },
-  { title: `情報可視化システム`, image: `yatani` },
-  { title: `筋電図でラジコンを動かそう`, image: `Sekino` },
-  { title: `ゲートアレイによる集積回路の設計とマイクロマシンへの応用`, image: `Mita` },
-  { title: `光インターコネクションのための半導体デバイス`, image: `TTK` },
-  { title: `生体調和エレクトロニクス`, image: `Someya` },
-  { title: `極低温での不思議な現象「超電導」に触れよう！`, image: `Ohsaki` },
-  { title: `雷実験`, image: `HKK` },
-  { title: `超電導の世界・磁気浮上`, image: `Baba3` },
-  { title: `無線給電で走る未来の電気自動車`, image: `HFK` },
-  { title: `動かす、運ぶ科学`, image: `koseki` },
-  { title: `ニューラルネットワークとレーダーを用いた地雷可視化システム`, image: `hirose` },
 ]
 
 export const query = graphql`
@@ -107,9 +93,9 @@ export const query = graphql`
         }
       }
     }
-    labHeadImage: file(relativePath: { eq: "lab/kawahara.jpg" }) {
-      ...SectionHeadImage
-    }
+    # labHeadImage: file(relativePath: { eq: "lab/kawahara.jpg" }) {
+    #   ...SectionHeadImage
+    # }
     labPhotos: allFile(filter: {relativeDirectory: {eq: "lab"}}) {
       edges {
         node {
