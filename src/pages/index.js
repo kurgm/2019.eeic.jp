@@ -8,13 +8,27 @@ import Hero from "../components/hero"
 import Section from "../components/section"
 import { indexByFilename } from "../utils"
 
-const IndexPage = ({data}) => {
+const IndexPage = ({ data }) => {
   const linkImageMap = indexByFilename(data.linkImage)
   return (
     <Layout>
-      <SEO keywords={[`近未来体験`, `五月祭`, `EEIC`, `電子情報工学科`, `電気電子工学科`, `東京大学`, `電子工作`, `プログラミング`, `VTuber`]} />
+      <SEO
+        keywords={[
+          `近未来体験`,
+          `五月祭`,
+          `EEIC`,
+          `電子情報工学科`,
+          `電気電子工学科`,
+          `東京大学`,
+          `電子工作`,
+          `プログラミング`,
+          `VTuber`,
+        ]}
+      />
       <Hero className="index-hero">
-        <div className="index-logo"><Img fixed={data.topLogo.childImageSharp.fixed} /></div>
+        <div className="index-logo">
+          <Img fixed={data.topLogo.childImageSharp.fixed} />
+        </div>
         <p>
           東京大学工学部
           <br className="mobile-on" />
@@ -22,7 +36,8 @@ const IndexPage = ({data}) => {
           電子情報工学科・電気電子工学科
           <br className="mobile-on" />
           {` `}
-          五月祭展示</p>
+          五月祭展示
+        </p>
         <h2>
           近未来体験
           <br className="narrow-on" />
@@ -49,14 +64,14 @@ const IndexPage = ({data}) => {
           <br className="middle-on" />
           小中学生も大歓迎です♪
         </p>
-        <p>
-          ぜひとも気軽にご来場ください！
-        </p>
+        <p>ぜひとも気軽にご来場ください！</p>
         <dl>
-          <dt>日時</dt><dd>5/18(土)、5/19(日) 9:00-18:00</dd>
-          <dt>場所</dt><dd>
+          <dt>日時</dt>
+          <dd>5/18(土)、5/19(日) 9:00-18:00</dd>
+          <dt>場所</dt>
+          <dd>
             東京大学本郷キャンパス
-            <br/>
+            <br />
             工学部2号館2階フォーラム
             <br className="narrow-on" />
             （案内デスク）
@@ -92,16 +107,17 @@ const IndexPage = ({data}) => {
       <Section>
         <h2>アクセス</h2>
         <dl>
-          <dt>会場</dt><dd>
+          <dt>会場</dt>
+          <dd>
             東京大学本郷キャンパス
             <br className="narrow-on" />
             {` `}
             工学部2・3・13号館
-            <br/>
+            <br />
             本郷三丁目駅から徒歩17分
-            <br/>
+            <br />
             東大前駅から徒歩8分
-            <br/>
+            <br />
             根津駅から徒歩7分
           </dd>
         </dl>
@@ -154,7 +170,7 @@ export const query = graphql`
     # vtuberImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
     #   ...SectionHeadImage
     # }
-    linkImage: allFile(filter: {relativeDirectory: {eq: "link"}}) {
+    linkImage: allFile(filter: { relativeDirectory: { eq: "link" } }) {
       edges {
         node {
           name

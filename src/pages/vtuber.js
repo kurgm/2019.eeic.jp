@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Section from "../components/section"
 
-const VTuberPage = ({data}) => (
+const VTuberPage = ({ data }) => (
   <Layout>
     <SEO title="バーチャルYouTuber企画" />
     <Hero
@@ -20,7 +20,7 @@ const VTuberPage = ({data}) => (
         <dt>場所</dt>
         <dd>
           工学部2号館11階電気系会議室6・7
-          <br/>
+          <br />
           工学部2号館12階電気系会議室4
         </dd>
       </dl>

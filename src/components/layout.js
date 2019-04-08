@@ -28,8 +28,7 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <footer>
-          Copyright © EEIC 五月祭展示「近未来体験2019」
-          All rights reserved.
+          Copyright © EEIC 五月祭展示「近未来体験2019」 All rights reserved.
         </footer>
       </>
     )}

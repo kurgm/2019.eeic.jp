@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import BackgroundImage from 'gatsby-background-image'
+import BackgroundImage from "gatsby-background-image"
 
 const Hero = ({ pageTitle, pageSubtitle, className, children }) => (
   <StaticQuery
@@ -24,14 +24,12 @@ const Hero = ({ pageTitle, pageSubtitle, className, children }) => (
           style={{ position: `absolute` }}
           backgroundColor="#10457E"
         />
-        {children || <>
-          <h2>
-            {pageTitle}
-          </h2>
-          <p className="subtitle">
-            {pageSubtitle}
-          </p>
-        </>}
+        {children || (
+          <>
+            <h2>{pageTitle}</h2>
+            <p className="subtitle">{pageSubtitle}</p>
+          </>
+        )}
       </section>
     )}
   />

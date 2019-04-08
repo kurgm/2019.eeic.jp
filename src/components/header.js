@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
         }
       }
     `}
-    render={data =>
+    render={data => (
       <header>
         <div>
           <h1>
@@ -26,9 +26,7 @@ const Header = ({ siteTitle }) => (
                   fixed={data.iconImage.childImageSharp.fixed}
                   className="header-icon"
                 />
-                <div>
-                  {siteTitle}
-                </div>
+                <div>{siteTitle}</div>
               </div>
             </Link>
           </h1>
@@ -39,7 +37,7 @@ const Header = ({ siteTitle }) => (
           </nav>
         </div>
       </header>
-    }
+    )}
   />
 )
 

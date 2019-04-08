@@ -5,29 +5,35 @@ import { graphql } from "gatsby"
 
 const Section = ({ headImage, photos, children }) => (
   <section className="content">
-    {headImage && <Img fixed={headImage.childImageSharp.fixed} className="content-image" />}
-    <div className="content-desc">
-      {children}
-    </div>
-    {photos && photos.length !== 0 && <div className="content-photos">
-      <div>
-        {photos.map(({title, image}, i) => <div key={i}>
-          <div>
-            <Img fixed={image.childImageSharp.fixed} />
-          </div>
-          {title && <div>{title}</div>}
-        </div>)}
+    {headImage && (
+      <Img fixed={headImage.childImageSharp.fixed} className="content-image" />
+    )}
+    <div className="content-desc">{children}</div>
+    {photos && photos.length !== 0 && (
+      <div className="content-photos">
+        <div>
+          {photos.map(({ title, image }, i) => (
+            <div key={i}>
+              <div>
+                <Img fixed={image.childImageSharp.fixed} />
+              </div>
+              {title && <div>{title}</div>}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>}
+    )}
   </section>
 )
 
 Section.propTypes = {
   headImage: PropTypes.any,
-  photos: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
-    image: PropTypes.any.isRequired,
-  })),
+  photos: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      image: PropTypes.any.isRequired,
+    })
+  ),
   children: PropTypes.node,
 }
 
