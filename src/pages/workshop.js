@@ -45,7 +45,6 @@ const WorkshopPage = ({data}) => {
       photos={[
         { image: photoMap.ework },
         { image: photoMap.ework1 },
-        { image: photoMap.ework2 },
       ]}
     >
       <h3>電子工作教室</h3>
