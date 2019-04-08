@@ -35,7 +35,7 @@ const ExhibitionPage = ({data}) => {
       </dl>
     </Section>
     <Section
-      // headImage={data.labHeadImage}
+      headImage={data.labHeadImage}
       photos={labExhibitions.map(({title, image}) => ({ title, image: labPhotoMap[image] }))}
     >
       <h3>研究室展示</h3>
@@ -93,9 +93,9 @@ export const query = graphql`
         }
       }
     }
-    # labHeadImage: file(relativePath: { eq: "lab/kawahara.jpg" }) {
-    #   ...SectionHeadImage
-    # }
+    labHeadImage: file(relativePath: { eq: "lab2.jpg" }) {
+      ...SectionHeadImage
+    }
     labPhotos: allFile(filter: {relativeDirectory: {eq: "lab"}}) {
       edges {
         node {
