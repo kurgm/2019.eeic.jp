@@ -118,10 +118,11 @@ const IndexPage = ({data}) => {
       <Section>
         <h2>リンク</h2>
         <div className="ext-link">
-          <a href="http://ut-mech.com/2018/" className="block-link">
+          <a href="http://ut-mech.com/" className="block-link">
             <div>
-              <Img
-                fixed={linkImageMap.mech.childImageSharp.fixed}
+              <img
+                src={linkImageMap.mech.publicURL}
+                width="300"
                 className="extlink-image"
               />
             </div>
@@ -157,6 +158,7 @@ export const query = graphql`
       edges {
         node {
           name
+          publicURL
           childImageSharp {
             fixed(width: 300) {
               ...GatsbyImageSharpFixed
