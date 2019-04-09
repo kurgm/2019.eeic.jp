@@ -95,10 +95,13 @@ section.hero {
   text-align: center;
 }
 
+section.hero>*:not(.hero-blur) {
+  z-index: 1;
+}
+
 .hero-blur {
   position: absolute !important;
-  z-index: -1;
-  filter: blur(3px);
+  filter: brightness(70%) contrast(105%) blur(3px);
   top: -3px;
   bottom: -3px;
   left: -3px;
