@@ -18,15 +18,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `近未来体験2019`,
+        short_name: `近未来体験2019`,
         start_url: `/`,
         background_color: `#e8e8e8`,
         theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/images/eeic-black.png`, // This path is relative to the root of the site.
+        icon: `src/images/bulb-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-svgr`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',

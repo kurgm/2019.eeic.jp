@@ -1,15 +1,16 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Section from "../components/section"
-import { indexByFilename } from "../utils"
+// import { indexByFilename } from "../utils"
+import { ReactComponent as BulbWhite } from "../images/bulb-white.svg"
+import { ReactComponent as MechLogo } from "../images/link/mech.svg"
 
 const IndexPage = ({ data }) => {
-  const linkImageMap = indexByFilename(data.linkImage)
+  // const linkImageMap = indexByFilename(data.linkImage)
   return (
     <Layout>
       <SEO
@@ -27,7 +28,7 @@ const IndexPage = ({ data }) => {
       />
       <Hero className="index-hero">
         <div className="index-logo">
-          <Img fixed={data.topLogo.childImageSharp.fixed} />
+          <BulbWhite height="90" />
         </div>
         <p>
           東京大学工学部
@@ -136,11 +137,7 @@ const IndexPage = ({ data }) => {
         <div className="ext-link">
           <a href="http://ut-mech.com/" className="block-link">
             <div>
-              <img
-                src={linkImageMap.mech.publicURL}
-                width="300"
-                className="extlink-image"
-              />
+              <MechLogo className="extlink-image" width="300" />
             </div>
             <div className="extlink-title">
               工学部機械工学科・機械情報工学科
@@ -154,13 +151,6 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    topLogo: file(relativePath: { eq: "eeic-white.png" }) {
-      childImageSharp {
-        fixed(height: 90) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
     exhibitionImage: file(relativePath: { eq: "lab.jpg" }) {
       ...SectionHeadImage
     }
@@ -170,19 +160,18 @@ export const query = graphql`
     # vtuberImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
     #   ...SectionHeadImage
     # }
-    linkImage: allFile(filter: { relativeDirectory: { eq: "link" } }) {
-      edges {
-        node {
-          name
-          publicURL
-          childImageSharp {
-            fixed(width: 300) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-      }
-    }
+    # linkImage: allFile(filter: { relativeDirectory: { eq: "link" } }) {
+    #   edges {
+    #     node {
+    #       name
+    #       childImageSharp {
+    #         fixed(width: 300) {
+    #           ...GatsbyImageSharpFixed
+    #         }
+    #       }
+    #     }
+    #   }
+    # }
   }
 `
 
