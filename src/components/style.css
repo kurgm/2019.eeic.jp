@@ -5,7 +5,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
   height: 70px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -97,11 +97,12 @@ section.hero {
 
 section.hero>*:not(.hero-blur) {
   z-index: 1;
+  filter: drop-shadow(0 2px 2px #000);
 }
 
 .hero-blur {
   position: absolute !important;
-  filter: brightness(70%) contrast(105%) blur(3px);
+  filter: brightness(80%) contrast(105%) blur(3px);
   top: -3px;
   bottom: -3px;
   left: -3px;
