@@ -41,8 +41,8 @@ const VTuberPage = ({ data }) => {
         headImage={data.vtuberHeadImage}
         photos={[
           {
-            title: `バーチャルYouTuberと話そう`,
-            image: photoMap.バーチャルYouTuberと話そう,
+            title: `バーチャルYouTuberと話そう`,
+            image: photoMap.バーチャルYouTuberと話そう,
           },
           { title: `“中の人”体験`, image: photoMap.中の人体験 },
         ]}
