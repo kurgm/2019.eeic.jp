@@ -24,6 +24,7 @@ const IndexPage = ({ data }) => {
           `電子工作`,
           `プログラミング`,
           `VTuber`,
+          `バーチャルYouTuber`,
         ]}
       />
       <Hero className="index-hero">
