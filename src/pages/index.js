@@ -99,8 +99,8 @@ const IndexPage = ({ data }) => {
             </Section>
           </Link>
           <Link to="/vtuber/" className="block-link">
-            <Section>
-              <h3>VTuber</h3>
+            <Section headImage={data.vtuberImage}>
+              <h3>バーチャルYouTuber企画</h3>
             </Section>
           </Link>
         </div>
@@ -157,9 +157,9 @@ export const query = graphql`
     workshopImage: file(relativePath: { eq: "workshop/ework.jpg" }) {
       ...SectionHeadImage
     }
-    # vtuberImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-    #   ...SectionHeadImage
-    # }
+    vtuberImage: file(relativePath: { eq: "vtuber.png" }) {
+      ...SectionHeadImage
+    }
     # linkImage: allFile(filter: { relativeDirectory: { eq: "link" } }) {
     #   edges {
     #     node {
