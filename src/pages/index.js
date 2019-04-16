@@ -87,7 +87,7 @@ const IndexPage = ({ data }) => {
             <Section headImage={data.exhibitionImage}>
               <h3>展示</h3>
               <p>
-                学生制作物展示ではEEICの学生が授業で作成した面白いメカを展示します。研究室展示ではEEICで行われる最先端の研究についてわかりやすくご紹介します。
+                学生制作物展示ではEEICの学生が授業で制作したオリジナリティあふれるメカを展示します。研究室展示ではEEICで行われる最先端の研究や技術について、実際に体験していただきながらわかりやすくご紹介します。
               </p>
             </Section>
           </Link>
@@ -102,6 +102,9 @@ const IndexPage = ({ data }) => {
           <Link to="/vtuber/" className="block-link">
             <Section headImage={data.vtuberImage}>
               <h3>バーチャルYouTuber企画</h3>
+              <p>
+                バーチャルYouTuber企画では、みつきとえれなと一緒にバーチャルの世界を味わうことができます。さまざまな催しや動画の放映、背景技術の解説展示も楽しめるほか、グッズの販売も行っていますので、少し覗いてみるのも大歓迎です。
+              </p>
             </Section>
           </Link>
         </div>
