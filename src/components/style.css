@@ -68,7 +68,7 @@ header nav a::after {
   transition: 0.3s width ease-out;
 }
 
-header nav a:hover::after {
+header nav a:hover::after, header nav a:active::after, header nav a:focus::after {
   width: 95%;
 }
 
@@ -228,7 +228,7 @@ section.content h3 {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
 }
 
-.block-link:hover {
+.block-link:hover, .block-link:active, .block-link:focus {
   transform: scale(1.02);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
