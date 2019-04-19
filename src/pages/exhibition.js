@@ -84,7 +84,29 @@ const bdmWorks = [
   { title: `Bonsai`, image: `Bonsai` },
 ]
 
-const labExhibitions = []
+const labExhibitions = [
+  { title: `食事認識アプリFoodLog`, image: `aizawa_yamasaki2` },
+  { title: `なんかすごいぞ！電気のチカラ！`, image: `hori_fujimoto` },
+  {
+    title: `ニューラルネットワークとワイヤレスエレクトロニクス`,
+    image: `hirose_natsuaki`,
+  },
+  { title: `マイクロマシンを見てみよう`, image: `mita.jpg` },
+  // { title: `情報可視化実験の成果物展示`, image: `` },
+  { title: `コンピュータを作る，使う`, image: `sakai_irie` },
+  { title: `動かす、運ぶ科学`, image: `koseki` },
+  { title: `知の情報処理`, image: `tsuruoka` },
+  {
+    title: `極低温で起こる不思議な「超電導」現象に触れてみよう！`,
+    image: `ohsaki`,
+  },
+  { title: `生体調和エレクトロニクス`, image: `someya_yokota` },
+  { title: `筋電図でラジコンを動かそう`, image: `sekinolab1` },
+  { title: `核融合プラズマを体感せよ！`, image: `onoyasushi` },
+  { title: `光と電気を操る半導体デバイス`, image: `takagi_takenaka` },
+  { title: `雷実験`, image: `kumada_fujii` },
+  { title: `(車上一次式)リニア誘導モーターカー`, image: `baba` },
+]
 
 export const query = graphql`
   query {
