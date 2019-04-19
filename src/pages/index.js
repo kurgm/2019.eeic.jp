@@ -8,6 +8,7 @@ import Section from "../components/section"
 // import { indexByFilename } from "../utils"
 import { ReactComponent as BulbWhite } from "../images/bulb-white.svg"
 import { ReactComponent as MechLogo } from "../images/link/mech.svg"
+import { ReactComponent as LineLogo } from "../images/line_a.svg"
 
 const IndexPage = ({ data }) => {
   // const linkImageMap = indexByFilename(data.linkImage)
@@ -135,6 +136,19 @@ const IndexPage = ({ data }) => {
             allowFullScreen
           />
         </div>
+      </Section>
+      <Section>
+        <h2>協賛</h2>
+          <div>
+            <LineLogo width="300" />
+          </div>
+          <p>
+            これはダミーテキストです。フォントやレイアウトを確認するために入れています。
+            <br className="mobile-off" />
+            これはダミーテキストです。フォントやレイアウトを確認するために入れています。
+            <br className="mobile-off" />
+            これはダミーテキストです。
+          </p>
       </Section>
       <Section>
         <h2>リンク</h2>
