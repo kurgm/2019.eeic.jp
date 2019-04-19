@@ -140,7 +140,7 @@ const IndexPage = ({ data }) => {
       <Section>
         <h2>協賛</h2>
           <div>
-            <LineLogo width="300" />
+            <LineLogo className="ext-logo" width="300" />
           </div>
           <p>
             これはダミーテキストです。フォントやレイアウトを確認するために入れています。
@@ -155,9 +155,9 @@ const IndexPage = ({ data }) => {
         <div className="ext-link">
           <a href="http://ut-mech.com/" className="block-link">
             <div>
-              <MechLogo className="extlink-image" width="300" />
+              <MechLogo className="ext-logo" width="300" />
             </div>
-            <div className="extlink-title">
+            <div className="ext-title">
               工学部機械工学科・機械情報工学科
             </div>
           </a>
