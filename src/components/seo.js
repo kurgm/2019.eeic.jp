@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, lang, meta, keywords, title, pathname }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,6 +19,8 @@ function SEO({ description, lang, meta, keywords, title }) {
             title
             description
             author
+            authorTwitter
+            siteUrl: url
           }
         }
       }
@@ -42,7 +44,19 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: title || site.siteMetadata.title,
+        },
+        {
+          property: `og:url`,
+          content: `${site.siteMetadata.siteUrl}${pathname}`,
+        },
+        {
+          property: `og:site_name`,
+          content: site.siteMetadata.title,
+        },
+        {
+          property: `og:image`,
+          content: `${site.siteMetadata.siteUrl}/favicons/icon-512x512.png`,
         },
         {
           property: `og:description`,
@@ -57,12 +71,16 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `summary`,
         },
         {
+          name: `twitter:site`,
+          content: site.siteMetadata.authorTwitter,
+        },
+        {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.authorTwitter,
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: title || site.siteMetadata.title,
         },
         {
           name: `twitter:description`,
@@ -88,6 +106,7 @@ SEO.defaultProps = {
   meta: [],
   keywords: [],
   description: ``,
+  pathname: ``,
 }
 
 SEO.propTypes = {
@@ -96,6 +115,7 @@ SEO.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object),
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string,
+  pathname: PropTypes.string,
 }
 
 export default SEO

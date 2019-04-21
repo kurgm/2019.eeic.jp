@@ -15,16 +15,24 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO
         keywords={[
+          `近未来体験2019`,
           `近未来体験`,
           `五月祭`,
           `EEIC`,
           `電子情報工学科`,
           `電気電子工学科`,
           `東京大学`,
+          `工学部`,
+          `電気系`,
+          `電子情報機器学`,
           `電子工作`,
           `プログラミング`,
           `VTuber`,
           `バーチャルYouTuber`,
+          `御城みつき`,
+          `風里えれな`,
+          `mitsuele_eeic`,
+          `eeic_studentadv`,
         ]}
       />
       <Hero className="index-hero">

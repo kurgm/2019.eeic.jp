@@ -2,7 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `近未来体験2019`,
     description: `『近未来体験2019』は電子情報工学科・電気電子工学科の学生が主催する五月祭展示企画です。`,
-    author: `EEIC Students`,
+    author: `東京大学電気系学科（EEIC）学生広報`,
+    authorTwitter: `@eeic_studentadv`,
+    url: `https://2019.eeic.jp`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

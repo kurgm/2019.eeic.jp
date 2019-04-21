@@ -12,7 +12,25 @@ const ExhibitionPage = ({ data }) => {
   const labPhotoMap = indexByFilename(data.labPhotos)
   return (
     <Layout>
-      <SEO title="展示" />
+      <SEO
+        title="展示"
+        pathname="/exhibition"
+        keywords={[
+          `電子情報機器学`,
+          `研究室`,
+          `近未来体験2019`,
+          `近未来体験`,
+          `五月祭`,
+          `EEIC`,
+          `電子情報工学科`,
+          `電気電子工学科`,
+          `東京大学`,
+          `工学部`,
+          `電気系`,
+          `eeic_studentadv`,
+        ]}
+        description="学生制作物展示では学生が授業で制作したメカを展示します。研究室展示では最先端の研究や技術についてご紹介します。"
+      />
       <Hero pageTitle="展示" pageSubtitle="Exhibition" />
       <Section
         headImage={data.bdmHeadImage}

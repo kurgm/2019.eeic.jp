@@ -11,7 +11,28 @@ const VTuberPage = ({ data }) => {
   const photoMap = indexByFilename(data.photos)
   return (
     <Layout>
-      <SEO title="バーチャルYouTuber企画" />
+      <SEO
+        title="バーチャルYouTuber企画"
+        pathname="/vtuber"
+        keywords={[
+          `VTuber`,
+          `バーチャルYouTuber`,
+          `御城みつき`,
+          `風里えれな`,
+          `mitsuele_eeic`,
+          `近未来体験2019`,
+          `近未来体験`,
+          `五月祭`,
+          `EEIC`,
+          `電子情報工学科`,
+          `電気電子工学科`,
+          `東京大学`,
+          `工学部`,
+          `電気系`,
+          `eeic_studentadv`,
+        ]}
+        description="バーチャルYouTuber企画では、みつきとえれなと一緒にバーチャルの世界を味わうことができます。"
+      />
       <Hero
         pageTitle="バーチャルYouTuber企画"
         pageSubtitle="Virtual YouTuber"

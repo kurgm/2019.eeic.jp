@@ -11,7 +11,25 @@ const WorkshopPage = ({ data }) => {
   const photoMap = indexByFilename(data.photos)
   return (
     <Layout>
-      <SEO title="ワークショップ" />
+      <SEO
+        title="ワークショップ"
+        pathname="/workshop"
+        keywords={[
+          `電子工作`,
+          `プログラミング`,
+          `近未来体験2019`,
+          `近未来体験`,
+          `五月祭`,
+          `EEIC`,
+          `電子情報工学科`,
+          `電気電子工学科`,
+          `東京大学`,
+          `工学部`,
+          `電気系`,
+          `eeic_studentadv`,
+        ]}
+        description="電子工作教室、プログラミング教室の2つのワークショップを設けています。物作りという学校の勉強とは趣の異なる体験をお楽しみください。"
+      />
       <Hero pageTitle="ワークショップ" pageSubtitle="Workshop" />
       <Section
         headImage={data.progHeadImage}
