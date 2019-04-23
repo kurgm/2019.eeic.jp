@@ -8,6 +8,7 @@ import Section from "../components/section"
 // import { indexByFilename } from "../utils"
 import { ReactComponent as BulbWhite } from "../images/bulb-white.svg"
 import { ReactComponent as MechLogo } from "../images/link/mech.svg"
+import { ReactComponent as LineLogo } from "../images/line_a.svg"
 
 const IndexPage = ({ data }) => {
   // const linkImageMap = indexByFilename(data.linkImage)
@@ -145,13 +146,28 @@ const IndexPage = ({ data }) => {
         </div>
       </Section>
       <Section>
+        <h2>協賛</h2>
+          <div>
+            <LineLogo className="ext-logo" width="300" />
+          </div>
+          <p>
+            LINE株式会社は、コミュニケーションアプリ「LINE」を機軸に、
+            <br className="mobile-off" />
+            各種モバイルサービスや広告事業、Fintech事業、AI事業を展開しています。
+            <br className="mobile-off" />
+            ミッションに「CLOSING THE DISTANCE」を掲げ、
+            <br className="mobile-off" />
+            世界中の人と人、人と情報・サービスとの距離を縮めることを目指しています。
+          </p>
+      </Section>
+      <Section>
         <h2>リンク</h2>
         <div className="ext-link">
           <a href="http://ut-mech.com/" className="block-link">
             <div>
-              <MechLogo className="extlink-image" width="300" />
+              <MechLogo className="ext-logo" width="300" />
             </div>
-            <div className="extlink-title">
+            <div className="ext-title">
               工学部機械工学科・機械情報工学科
             </div>
           </a>
