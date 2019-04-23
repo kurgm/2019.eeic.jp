@@ -46,6 +46,7 @@ const VTuberPage = ({ data }) => {
             image: photoMap.バーチャルYouTuberと話そう,
           },
           { title: `“中の人”体験`, image: photoMap.中の人体験 },
+          { title: `VRキャンパスツアー`, image: photoMap.VR },
         ]}
       >
         <h3>バーチャルYouTuber企画</h3>
