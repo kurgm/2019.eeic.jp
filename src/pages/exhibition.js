@@ -97,7 +97,7 @@ const bdmWorks = [
   { title: `ひらめき`, image: `ひらめき` },
   { title: `Cycholock`, image: `Cycholock` },
   { title: `カード判別器`, image: `カード判別器` },
-  { title: `きわめて簡単な電子工作`, image: `きわめて簡単な電子工作` },
+  { title: `きわめて簡単な電子ゲーム`, image: `きわめて簡単な電子工作` },
   { title: `スマートポスト`, image: `スマートポスト` },
   { title: `Bonsai`, image: `Bonsai` },
 ]
