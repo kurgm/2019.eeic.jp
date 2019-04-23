@@ -4,4 +4,16 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+exports.onInitialClientRender = () => {
+  const scriptUrls = [
+    `https://apis.google.com/js/platform.js`,
+    `https://platform.twitter.com/widgets.js`,
+  ]
+  for (const url of scriptUrls) {
+    const s = document.createElement(`script`)
+    s.src = url
+    s.charset = `utf-8`
+    s.async = true
+    document.getElementsByTagName(`head`)[0].appendChild(s)
+  }
+}
