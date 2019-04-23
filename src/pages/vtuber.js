@@ -46,6 +46,7 @@ const VTuberPage = ({ data }) => {
             title: `バーチャルYouTuberと話そう`,
             image: photoMap.バーチャルYouTuberと話そう,
           },
+          { title: `ARチェキ会`, image: photoMap.AR },
           { title: `“中の人”体験`, image: photoMap.中の人体験 },
         ]}
       >
