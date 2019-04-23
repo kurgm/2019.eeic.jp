@@ -143,11 +143,13 @@ const IndexPage = ({ data }) => {
             <LineLogo className="ext-logo" width="300" />
           </div>
           <p>
-            これはダミーテキストです。フォントやレイアウトを確認するために入れています。
+            LINE株式会社は、コミュニケーションアプリ「LINE」を機軸に、
             <br className="mobile-off" />
-            これはダミーテキストです。フォントやレイアウトを確認するために入れています。
+            各種モバイルサービスや広告事業、Fintech事業、AI事業を展開しています。
             <br className="mobile-off" />
-            これはダミーテキストです。
+            ミッションに「CLOSING THE DISTANCE」を掲げ、
+            <br className="mobile-off" />
+            世界中の人と人、人と情報・サービスとの距離を縮めることを目指しています。
           </p>
       </Section>
       <Section>
