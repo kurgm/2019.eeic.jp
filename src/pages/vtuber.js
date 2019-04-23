@@ -41,12 +41,12 @@ const VTuberPage = ({ data }) => {
       <Section
         headImage={data.vtuberHeadImage}
         photos={[
+          { title: `VRキャンパスツアー`, image: photoMap.VR },
           {
             title: `バーチャルYouTuberと話そう`,
             image: photoMap.バーチャルYouTuberと話そう,
           },
           { title: `“中の人”体験`, image: photoMap.中の人体験 },
-          { title: `VRキャンパスツアー`, image: photoMap.VR },
         ]}
       >
         <h3>バーチャルYouTuber企画</h3>
