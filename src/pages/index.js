@@ -55,7 +55,7 @@ const IndexPage = ({ data }) => {
           2019
         </h2>
       </Hero>
-      <Section>
+      <Section id="about">
         <h2>About</h2>
         <p>
           「近未来体験2019」は電子情報工学科・電気電子工学科の学生が主催する
@@ -89,7 +89,7 @@ const IndexPage = ({ data }) => {
           </dd>
         </dl>
       </Section>
-      <Section>
+      <Section id="contents">
         <h2>企画</h2>
         <div className="hori-sections">
           <Link to="/exhibition/" className="block-link">
@@ -118,7 +118,7 @@ const IndexPage = ({ data }) => {
           </Link>
         </div>
       </Section>
-      <Section>
+      <Section id="access">
         <h2>アクセス</h2>
         <dl>
           <dt>会場</dt>
@@ -145,7 +145,7 @@ const IndexPage = ({ data }) => {
           />
         </div>
       </Section>
-      <Section>
+      <Section id="sponsor">
         <h2>協賛</h2>
         <div>
           <LineLogo className="ext-logo" width="300" />
@@ -160,7 +160,7 @@ const IndexPage = ({ data }) => {
           世界中の人と人、人と情報・サービスとの距離を縮めることを目指しています。
         </p>
       </Section>
-      <Section>
+      <Section id="links">
         <h2>リンク</h2>
         <div className="ext-link">
           <a href="http://ut-mech.com/" className="block-link">

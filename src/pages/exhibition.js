@@ -33,6 +33,7 @@ const ExhibitionPage = ({ data }) => {
       />
       <Hero pageTitle="展示" pageSubtitle="Exhibition" />
       <Section
+        id="bdm"
         headImage={data.bdmHeadImage}
         photos={bdmWorks.map(({ title, image }) => ({
           title,
@@ -55,6 +56,7 @@ const ExhibitionPage = ({ data }) => {
         </dl>
       </Section>
       <Section
+        id="lab"
         headImage={data.labHeadImage}
         photos={labExhibitions.map(({ title, image }) => ({
           title,

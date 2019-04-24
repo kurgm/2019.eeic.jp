@@ -81,6 +81,8 @@ footer {
 
 main {
   margin-top: 70px;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 section.hero {
@@ -155,8 +157,6 @@ section.hero.index-hero h2 {
 }
 
 section.content {
-  background: #FFF;
-  color: black;
   text-align: center;
 }
 
@@ -282,11 +282,24 @@ br.middle-on, br.mobile-on, br.narrow-on {
   }
 }
 
+section.content[id]::before {
+  /* Offset the fixed header overlapping anchors */
+  content: '';
+  display: block;
+  height: 70px;
+  margin-top: -70px;
+  visibility: hidden;
+}
+
 @media only screen and (max-height: 600px) {
   header {
     height: 60px;
   }
   main {
     margin-top: 60px;
+  }
+  section.content[id]::before {
+    height: 60px;
+    margin-top: -60px;
   }
 }

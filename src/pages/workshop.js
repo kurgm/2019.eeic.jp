@@ -32,6 +32,7 @@ const WorkshopPage = ({ data }) => {
       />
       <Hero pageTitle="ワークショップ" pageSubtitle="Workshop" />
       <Section
+        id="programming"
         headImage={data.progHeadImage}
         photos={[{ image: photoMap.programming }]}
       >
@@ -54,6 +55,7 @@ const WorkshopPage = ({ data }) => {
         </small>
       </Section>
       <Section
+        id="ework"
         headImage={data.eworkHeadImage}
         photos={[{ image: photoMap.ework }, { image: photoMap.ework1 }]}
       >

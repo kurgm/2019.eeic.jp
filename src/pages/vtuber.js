@@ -41,6 +41,7 @@ const VTuberPage = ({ data }) => {
         className="long-hero"
       />
       <Section
+        id="vtuber"
         headImage={data.vtuberHeadImage}
         photos={[
           { title: `VRキャンパスツアー`, image: photoMap.VR },

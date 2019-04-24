@@ -3,8 +3,8 @@ import React from "react"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 
-const Section = ({ headImage, photos, children }) => (
-  <section className="content">
+const Section = ({ headImage, photos, children, id }) => (
+  <section className="content" {...(id ? { id } : {})}>
     {headImage && (
       <Img fixed={headImage.childImageSharp.fixed} className="content-image" />
     )}
@@ -35,6 +35,7 @@ Section.propTypes = {
     })
   ),
   children: PropTypes.node,
+  id: PropTypes.string,
 }
 
 export default Section
