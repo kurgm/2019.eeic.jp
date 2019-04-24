@@ -19,13 +19,12 @@ header>div {
   height: 100%;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 1.5rem;
+.header-logo-container {
   flex-grow: 1;
+  line-height: 0;
 }
 
-header h1 a {
+.header-logo-container a {
   display: inline-block;
 }
 
@@ -36,6 +35,11 @@ header h1 a {
 
 .header-icon {
   margin-right: 0.6rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 header a {

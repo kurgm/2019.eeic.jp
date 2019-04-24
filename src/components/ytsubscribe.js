@@ -9,9 +9,9 @@ class YTSubscribe extends React.Component {
   }
   render() {
     return (
-      <span ref={this.containerRef}>
+      <div ref={this.containerRef} style={{ display: `inline-block` }}>
         <div className="g-ytsubscribe" {...this.props} />
-      </span>
+      </div>
     )
   }
 }

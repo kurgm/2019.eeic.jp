@@ -7,14 +7,14 @@ import { ReactComponent as BulbBlack } from "../images/bulb-black.svg"
 const Header = ({ siteTitle }) => (
   <header>
     <div>
-      <h1>
+      <div className="header-logo-container">
         <Link to="/">
           <div className="header-logo">
             <BulbBlack className="header-icon" height="45" />
-            <div>{siteTitle}</div>
+            <h1>{siteTitle}</h1>
           </div>
         </Link>
-      </h1>
+      </div>
       <nav>
         <Link to="/exhibition/">Exhibition</Link>
         <Link to="/workshop/">Workshop</Link>
