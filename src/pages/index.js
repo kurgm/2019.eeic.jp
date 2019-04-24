@@ -32,6 +32,8 @@ const IndexPage = ({ data }) => {
           `バーチャルYouTuber`,
           `御城みつき`,
           `風里えれな`,
+          `VR`,
+          `AR`,
           `mitsuele_eeic`,
           `eeic_studentadv`,
         ]}

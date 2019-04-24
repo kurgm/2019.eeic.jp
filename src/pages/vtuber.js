@@ -22,6 +22,8 @@ const VTuberPage = ({ data }) => {
           `御城みつき`,
           `風里えれな`,
           `mitsuele_eeic`,
+          `VR`,
+          `AR`,
           `近未来体験2019`,
           `近未来体験`,
           `五月祭`,
