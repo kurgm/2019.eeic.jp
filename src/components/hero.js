@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
+import Img from "gatsby-image"
 
 const Hero = ({ pageTitle, pageSubtitle, className, children }) => (
   <StaticQuery
@@ -18,11 +18,9 @@ const Hero = ({ pageTitle, pageSubtitle, className, children }) => (
     `}
     render={data => (
       <section className={`hero ${className || ``}`}>
-        <BackgroundImage
+        <Img
           className="hero-blur"
           fluid={data.bgimage.childImageSharp.fluid}
-          style={{ position: `absolute` }}
-          backgroundColor="#10457E"
         />
         {children || (
           <>
