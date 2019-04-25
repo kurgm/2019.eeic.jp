@@ -148,18 +148,20 @@ const IndexPage = ({ data }) => {
       </Section>
       <Section id="sponsor">
         <h2>協賛</h2>
-        <div>
-          <LineLogo className="ext-logo" width="300" />
-        </div>
-        <p>
-          LINE株式会社は、コミュニケーションアプリ「LINE」を機軸に、
-          <br className="mobile-off" />
-          各種モバイルサービスや広告事業、Fintech事業、AI事業を展開しています。
-          <br className="mobile-off" />
-          ミッションに「CLOSING THE DISTANCE」を掲げ、
-          <br className="mobile-off" />
-          世界中の人と人、人と情報・サービスとの距離を縮めることを目指しています。
-        </p>
+        <a href="https://linecorp.com/" className="block-link">
+          <div>
+            <LineLogo className="ext-logo" width="300" />
+          </div>
+          <p>
+            LINE株式会社は、コミュニケーションアプリ「LINE」を機軸に、
+            <br className="mobile-off" />
+            各種モバイルサービスや広告事業、Fintech事業、AI事業を展開しています。
+            <br className="mobile-off" />
+            ミッションに「CLOSING THE DISTANCE」を掲げ、
+            <br className="mobile-off" />
+            世界中の人と人、人と情報・サービスとの距離を縮めることを目指しています。
+          </p>
+        </a>
       </Section>
       <Section id="links">
         <h2>リンク</h2>
