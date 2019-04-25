@@ -7,14 +7,15 @@
 const fs = require(`fs`)
 const path = require(`path`)
 
-const htFiles = [
-  { src: `src/htfiles/htaccess`, dest: `.htaccess` },
-  { src: `src/htfiles/static-htaccess`, dest: `static/.htaccess` },
+const staticFiles = [
+  { src: `src/stfiles/htaccess`, dest: `.htaccess` },
+  { src: `src/stfiles/static-htaccess`, dest: `static/.htaccess` },
+  { src: `src/stfiles/google2bc75986b7340908.html`, dest: `google2bc75986b7340908.html` },
 ]
 
 exports.onPostBuild = async ({ store }) => {
   const { program } = store.getState()
-  await Promise.all(htFiles.map(({ src, dest }) => {
+  await Promise.all(staticFiles.map(({ src, dest }) => {
     const srcPath = path.join(program.directory, src)
     const destPath = path.join(program.directory, `public`, dest)
     return new Promise((resolve, reject) => {
