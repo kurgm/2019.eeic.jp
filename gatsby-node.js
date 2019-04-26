@@ -11,6 +11,7 @@ const staticFiles = [
   { src: `src/stfiles/htaccess`, dest: `.htaccess` },
   { src: `src/stfiles/static-htaccess`, dest: `static/.htaccess` },
   { src: `src/stfiles/google2bc75986b7340908.html`, dest: `google2bc75986b7340908.html` },
+  { src: `src/stfiles/BingSiteAuth.xml`, dest: `BingSiteAuth.xml` },
 ]
 
 exports.onPostBuild = async ({ store }) => {
