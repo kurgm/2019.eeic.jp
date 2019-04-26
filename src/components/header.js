@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
       <div className="header-logo-container">
         <Link to="/">
           <div className="header-logo">
-            <BulbBlack className="header-icon" height="45" />
+            <BulbBlack className="header-icon" height="45" width="36" />
             <h1>{siteTitle}</h1>
           </div>
         </Link>

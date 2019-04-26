@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import Img from "gatsby-image/withIEPolyfill"
 
 const Hero = ({ pageTitle, pageSubtitle, className, children }) => (
   <StaticQuery
@@ -21,6 +21,8 @@ const Hero = ({ pageTitle, pageSubtitle, className, children }) => (
         <Img
           className="hero-blur"
           fluid={data.bgimage.childImageSharp.fluid}
+          objectFit="cover"
+          objectPosition="50% 50%"
         />
         {children || (
           <>
