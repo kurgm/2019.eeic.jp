@@ -267,6 +267,9 @@ br.middle-on, br.mobile-on, br.narrow-on {
 }
 
 @media only screen and (max-width: 768px) {
+  header {
+    position: absolute;
+  }
   header nav {
     display: none;
   }
