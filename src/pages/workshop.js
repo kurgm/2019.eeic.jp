@@ -34,7 +34,10 @@ const WorkshopPage = ({ data }) => {
       <Section
         id="programming"
         headImage={data.progHeadImage}
-        photos={[{ image: photoMap.programming }]}
+        photos={[
+          { image: photoMap.programming },
+          { image: photoMap.キャプチャ },
+        ]}
       >
         <h3>プログラミング教室</h3>
         <p>ゲームで遊びながら楽しくプログラミングの基礎を勉強しよう！！</p>
@@ -57,7 +60,11 @@ const WorkshopPage = ({ data }) => {
       <Section
         id="ework"
         headImage={data.eworkHeadImage}
-        photos={[{ image: photoMap.ework }, { image: photoMap.ework1 }]}
+        photos={[
+          { image: photoMap.ework1, title: `初級：電子キャンドル` },
+          { image: photoMap.ework2, title: `中級：テルミン` },
+          { image: photoMap.ework3, title: `上級：パンパンダッシュ` },
+        ]}
       >
         <h3>電子工作教室</h3>
         <p>

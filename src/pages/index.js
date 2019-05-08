@@ -183,7 +183,7 @@ export const query = graphql`
     exhibitionImage: file(relativePath: { eq: "lab.jpg" }) {
       ...SectionHeadImage
     }
-    workshopImage: file(relativePath: { eq: "workshop/ework.jpg" }) {
+    workshopImage: file(relativePath: { eq: "workshop.jpg" }) {
       ...SectionHeadImage
     }
     vtuberImage: file(relativePath: { eq: "vtuber.png" }) {
