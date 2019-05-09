@@ -51,6 +51,7 @@ const Footer = () => (
           <a
             href="https://twitter.com/eeic_studentadv"
             rel="nofollow noopener noreferrer"
+            target="_blank"
             className="social-logo"
           >
             <TwitterLogo width="40" height="40" className="twitter-logo" />
@@ -58,6 +59,7 @@ const Footer = () => (
           <a
             href="https://www.facebook.com/eeic.studentadv"
             rel="nofollow noopener noreferrer"
+            target="_blank"
             className="social-logo"
           >
             <FacebookLogo width="40" height="40" className="facebook-logo" />
