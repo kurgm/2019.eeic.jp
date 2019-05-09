@@ -60,7 +60,15 @@ const VTuberPage = ({ data }) => {
           バーチャルYouTuber企画では、みつきとえれなと一緒にバーチャルの世界を味わうことができます。VR上で東京大学の中を巡れる「VRキャンパスツアー」、一緒に写真を撮れる「ARチェキ会」、自分に合わせてキャラクターが動くのを体感できる「“中の人”体験」、時刻限定で開催される「バーチャルYouTuberと話そう」をはじめ、いろんな催しがあります。2人の動画の放映やバーチャルYouTuberの背景にある技術を解説する展示も楽しめるほか、グッズの販売も行っていますので、少し覗いてみるのも大歓迎です。是非いらしてください！
         </p>
         <p>
-          みつきとえれなのYouTubeチャンネルとTwitterもよろしくお願いします！
+          みつきとえれなのYouTubeチャンネルとTwitter、
+          <a
+            href="https://line.me/S/sticker/7523153"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            LINEスタンプ
+          </a>
+          もよろしくお願いします！
         </p>
         <div>
           <YTSubscribe
