@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 import "./style.css"
 
 const Layout = ({ children }) => (
@@ -27,9 +28,7 @@ const Layout = ({ children }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
-        <footer>
-          Copyright © EEIC 五月祭展示「近未来体験2019」 All rights reserved.
-        </footer>
+        <Footer />
       </>
     )}
   />
