@@ -36,7 +36,7 @@ const WorkshopPage = ({ data }) => {
         headImage={data.progHeadImage}
         photos={[
           { image: photoMap.programming },
-          { image: photoMap.キャプチャ },
+          { image: photoMap.programming2 },
         ]}
       >
         <h3>プログラミング教室</h3>
