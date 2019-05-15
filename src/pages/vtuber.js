@@ -15,7 +15,7 @@ const VTuberPage = ({ data }) => {
     <Layout>
       <SEO
         title="バーチャルYouTuber企画"
-        pathname="/vtuber"
+        pathname="/vtuber/"
         keywords={[
           `VTuber`,
           `バーチャルYouTuber`,

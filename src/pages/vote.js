@@ -9,7 +9,7 @@ const VotePage = () => (
   <Layout>
     <SEO
       title="May Fes. Awards 投票方法のご案内"
-      pathname="/vote"
+      pathname="/vote/"
       keywords={[
         `近未来体験2019`,
         `近未来体験`,

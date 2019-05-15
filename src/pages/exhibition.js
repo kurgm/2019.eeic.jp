@@ -14,7 +14,7 @@ const ExhibitionPage = ({ data }) => {
     <Layout>
       <SEO
         title="展示"
-        pathname="/exhibition"
+        pathname="/exhibition/"
         keywords={[
           `電子情報機器学`,
           `研究室`,

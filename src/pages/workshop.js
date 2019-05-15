@@ -13,7 +13,7 @@ const WorkshopPage = ({ data }) => {
     <Layout>
       <SEO
         title="ワークショップ"
-        pathname="/workshop"
+        pathname="/workshop/"
         keywords={[
           `電子工作`,
           `プログラミング`,
