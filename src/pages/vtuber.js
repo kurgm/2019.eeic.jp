@@ -104,6 +104,35 @@ const VTuberPage = ({ data }) => {
           </dd>
         </dl>
       </Section>
+      <Section
+        id="goods"
+        headImage={data.goodsHeadImage}
+        photos={[
+          { title: `Tシャツ（えれな）`, image: photoMap.shirt_e },
+          { title: `Tシャツ（みつき）`, image: photoMap.shirt_m },
+          { title: `キーホルダー`, image: photoMap.keyholder },
+          { title: `ステッカー`, image: photoMap.sticker },
+          { title: `しおり`, image: photoMap.bookmark },
+        ]}
+      >
+        <h3>グッズ販売</h3>
+        <p>
+          みつきとえれなのグッズを販売しております。ぜひお買い求めください。
+        </p>
+        <p>
+          Tシャツ（S, M, L）：2500円
+          <br />
+          キーホルダー：300円
+          <br />
+          ステッカー：100円
+          <br />
+          しおり：100円
+        </p>
+        <dl>
+          <dt>場所</dt>
+          <dd>工学部2号館4階244号講義室</dd>
+        </dl>
+      </Section>
     </Layout>
   )
 }
@@ -111,6 +140,9 @@ const VTuberPage = ({ data }) => {
 export const query = graphql`
   query {
     vtuberHeadImage: file(relativePath: { eq: "vtuber.png" }) {
+      ...SectionHeadImage
+    }
+    goodsHeadImage: file(relativePath: { eq: "vtuber/keyholder.png" }) {
       ...SectionHeadImage
     }
     photos: allFile(filter: { relativeDirectory: { eq: "vtuber" } }) {
