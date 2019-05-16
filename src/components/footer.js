@@ -44,6 +44,9 @@ const Footer = () => (
               <li>
                 <Link to="/vtuber/#vtuber">バーチャルYouTuber企画</Link>
               </li>
+              <li>
+                <Link to="/vtuber/#goods">グッズ販売</Link>
+              </li>
             </ul>
           </div>
         </div>
