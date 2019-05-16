@@ -148,7 +148,11 @@ const IndexPage = ({ data }) => {
       </Section>
       <Section id="sponsor">
         <h2>協賛</h2>
-        <a href="https://linecorp.com/" className="block-link">
+        <a
+          href="https://linecorp.com/"
+          className="block-link"
+          style={{ padding: `0 1rem 1px` }}
+        >
           <div>
             <LineLogo className="ext-logo" width="300" />
           </div>
@@ -166,7 +170,11 @@ const IndexPage = ({ data }) => {
       <Section id="links">
         <h2>リンク</h2>
         <div className="ext-link">
-          <a href="http://ut-mech.com/" className="block-link">
+          <a
+            href="http://ut-mech.com/"
+            className="block-link"
+            style={{ margin: `0 auto`, padding: `1rem` }}
+          >
             <div>
               <MechLogo className="ext-logo" width="300" />
             </div>
