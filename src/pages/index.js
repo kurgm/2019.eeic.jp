@@ -167,6 +167,17 @@ const IndexPage = ({ data }) => {
           </p>
         </a>
       </Section>
+      <Section id="vote">
+        <h2>投票</h2>
+        <p>
+          近未来体験2019は、五月祭の人気企画投票「May Fes.
+          Awards」に参加しています。
+          <br className="mobile-off" />
+          ぜひ近未来体験2019への投票をお願いします！　
+          <br className="mobile-off" />
+          <Link to="/vote/">投票方法の詳細はこちらをご覧ください。</Link>
+        </p>
+      </Section>
       <Section id="links">
         <h2>リンク</h2>
         <div className="ext-link">
