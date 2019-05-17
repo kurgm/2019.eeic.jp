@@ -103,6 +103,21 @@ const VTuberPage = ({ data }) => {
             </small>
           </dd>
         </dl>
+        <p>
+          <small>
+            ※VRキャンパスツアーは整理券制となっております。体験をご希望の方はお早めに工学部2号館11階にお越しください。
+            <br />
+            また、整理券の配布情報を
+            <a
+              href="https://twitter.com/eeic_studentadv"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              Twitter @eeic_studentadv
+            </a>
+            で発信しておりますので、チェックしてください！
+          </small>
+        </p>
       </Section>
       <Section
         id="goods"
