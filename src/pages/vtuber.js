@@ -102,6 +102,10 @@ const VTuberPage = ({ data }) => {
             <small>
               ※バーチャルYouTuberと話そう：12:00～、14:00～、16:00～で各回30分ほどの予定です。
             </small>
+            <br />
+            <small>
+              ※ARチェキ会：13:00～、15:00～、17:00～の予定です。
+            </small>
           </dd>
         </dl>
         <p>
