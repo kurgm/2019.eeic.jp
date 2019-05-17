@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Section from "../components/section"
 import { indexByFilename } from "../utils"
+import LocationBlock from "../components/location-block"
 
 const ExhibitionPage = ({ data }) => {
   const bdmPhotoMap = indexByFilename(data.bdmPhotos)
@@ -50,7 +51,9 @@ const ExhibitionPage = ({ data }) => {
         <p>学生の柔軟な発想と高度な技術力に触れてみてはいかがでしょうか？</p>
         <dl>
           <dt>場所</dt>
-          <dd>工学部2号館4階241号講義室</dd>
+          <dd>
+            <LocationBlock name="E5" /> 工学部2号館4階241号講義室
+          </dd>
           <dt>時間</dt>
           <dd>9:00-18:00</dd>
         </dl>
@@ -73,13 +76,15 @@ const ExhibitionPage = ({ data }) => {
         <dl>
           <dt>場所</dt>
           <dd>
-            工学部2号館2階フォーラム
+            <LocationBlock name="E1" /> 工学部2号館2階フォーラム
             <br />
-            工学部2号館3階電気系会議室1・2・3
+            <LocationBlock name="E2" />
+            <LocationBlock name="E3" />
+            <LocationBlock name="E4" /> 工学部2号館3階電気系会議室1・2・3
             <br />
-            工学部3号館1階電力実験室2・3
+            <LocationBlock name="E10" /> 工学部3号館1階電力実験室2・3
             <br />
-            工学部13号館雷実験室
+            <LocationBlock name="E11" /> 工学部13号館雷実験室
           </dd>
           <dt>時間</dt>
           <dd>9:00-18:00</dd>

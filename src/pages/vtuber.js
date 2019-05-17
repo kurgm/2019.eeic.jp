@@ -8,6 +8,7 @@ import Section from "../components/section"
 import { indexByFilename } from "../utils"
 import YTSubscribe from "../components/ytsubscribe"
 import TwitterFollow from "../components/twttrfollow"
+import LocationBlock from "../components/location-block"
 
 const VTuberPage = ({ data }) => {
   const photoMap = indexByFilename(data.photos)
@@ -88,11 +89,11 @@ const VTuberPage = ({ data }) => {
         <dl>
           <dt>場所</dt>
           <dd>
-            工学部2号館4階244号講義室
+            <LocationBlock name="E6" /> 工学部2号館4階244号講義室
             <br />
-            工学部2号館11階電気系会議室6・7
+            <LocationBlock name="E8" /> 工学部2号館11階電気系会議室6・7
             <br />
-            工学部2号館12階電気系会議室4
+            <LocationBlock name="E9" /> 工学部2号館12階電気系会議室4
           </dd>
           <dt>時間</dt>
           <dd>
@@ -147,7 +148,9 @@ const VTuberPage = ({ data }) => {
         </p>
         <dl>
           <dt>場所</dt>
-          <dd>工学部2号館4階244号講義室</dd>
+          <dd>
+            <LocationBlock name="E6" /> 工学部2号館4階244号講義室
+          </dd>
         </dl>
       </Section>
     </Layout>

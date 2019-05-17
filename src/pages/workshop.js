@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Section from "../components/section"
 import { indexByFilename } from "../utils"
+import LocationBlock from "../components/location-block"
 
 const WorkshopPage = ({ data }) => {
   const photoMap = indexByFilename(data.photos)
@@ -47,7 +48,9 @@ const WorkshopPage = ({ data }) => {
         <p>君はどのレベルまでクリアできるかな？</p>
         <dl>
           <dt>場所</dt>
-          <dd>工学部2号館4階241号講義室</dd>
+          <dd>
+            <LocationBlock name="E5" /> 工学部2号館4階241号講義室
+          </dd>
           <dt>時間</dt>
           <dd>9:00-18:00</dd>
         </dl>
@@ -79,7 +82,9 @@ const WorkshopPage = ({ data }) => {
         </p>
         <dl>
           <dt>場所</dt>
-          <dd>工学部2号館4階電気系学生実験室41A</dd>
+          <dd>
+            <LocationBlock name="E7" /> 工学部2号館4階電気系学生実験室41A
+          </dd>
           <dt>時間</dt>
           <dd>10:00-18:00</dd>
         </dl>
