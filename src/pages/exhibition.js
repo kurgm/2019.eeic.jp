@@ -87,7 +87,11 @@ const ExhibitionPage = ({ data }) => {
             <LocationBlock name="E11" /> 工学部13号館雷実験室
           </dd>
           <dt>時間</dt>
-          <dd>9:00-18:00</dd>
+          <dd>
+            9:00-18:00
+            <br />
+            <small>※一部の研究室の展示は公開時間が異なります。詳細は受付にてお尋ねください。</small>
+          </dd>
         </dl>
       </Section>
     </Layout>
