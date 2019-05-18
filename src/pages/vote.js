@@ -52,7 +52,7 @@ const VotePage = () => (
       <h3>投票方法1: スマホで投票</h3>
       <p>
         以下のリンクから投票用のLINE@アカウントを登録して、企画ID:{" "}
-        <strong>311</strong>にご投票ください。
+        <strong className="emph">311</strong>にご投票ください。
       </p>
       <a
         href="https://line.me/R/ti/p/nT2Bp1ufat"
@@ -75,7 +75,7 @@ const VotePage = () => (
       <h3>投票方法2: 案内所で投票</h3>
       <p>
         正門案内所・赤門案内所・農学部案内所のいずれかの案内所で、企画ID:{" "}
-        <strong>311</strong>にご投票ください。
+        <strong className="emph">311</strong>にご投票ください。
       </p>
       <p>
         各案内所の位置は、
