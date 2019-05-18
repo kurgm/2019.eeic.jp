@@ -30,3 +30,10 @@ FileETag None
 	Header set Cache-Control "public, max-age=0, must-revalidate"
     </Files>
 </IfModule>
+
+<FilesMatch "^\.git">
+    Require all denied
+</FilesMatch>
+<Directorymatch "^/.*/\.git/">
+    Require all denied
+</Directorymatch>
