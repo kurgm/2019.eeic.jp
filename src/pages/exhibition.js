@@ -90,7 +90,9 @@ const ExhibitionPage = ({ data }) => {
           <dd>
             9:00-18:00
             <br />
-            <small>※一部の研究室の展示は公開時間が異なります。詳細は受付にてお尋ねください。</small>
+            <small>
+              ※一部の研究室の展示は公開時間が異なります。詳細は受付にてお尋ねください。
+            </small>
           </dd>
         </dl>
       </Section>

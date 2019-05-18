@@ -50,7 +50,10 @@ const VotePage = () => (
     </Section>
     <Section id="vote1">
       <h3>投票方法1: スマホで投票</h3>
-      <p>以下のリンクから投票用のLINE@アカウントをご登録ください。</p>
+      <p>
+        以下のリンクから投票用のLINE@アカウントを登録して、企画ID:{" "}
+        <strong>311</strong>にご投票ください。
+      </p>
       <a
         href="https://line.me/R/ti/p/nT2Bp1ufat"
         rel="nofollow noreferrer"
