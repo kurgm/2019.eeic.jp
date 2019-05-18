@@ -86,7 +86,7 @@ const WorkshopPage = ({ data }) => {
             <LocationBlock name="E7" /> 工学部2号館4階電気系学生実験室41A
           </dd>
           <dt>時間</dt>
-          <dd>10:00-18:00</dd>
+          <dd>9:00-18:00</dd>
         </dl>
         <p>
           <small>
