@@ -7,6 +7,10 @@ script:
   - npm run build
 #  - npm test
 
+cache:
+  directories:
+    - node_modules
+
 deploy:
   provider: pages
   target-branch: build
