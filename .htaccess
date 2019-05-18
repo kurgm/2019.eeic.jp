@@ -34,6 +34,6 @@ FileETag None
 <FilesMatch "^\.git">
     Require all denied
 </FilesMatch>
-<Directorymatch "^/.*/\.git/">
+<FilesMatch "/.git">
     Require all denied
-</Directorymatch>
+</FilesMatch>
