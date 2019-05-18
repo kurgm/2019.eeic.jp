@@ -46,6 +46,15 @@ const WorkshopPage = ({ data }) => {
           仕掛けを駆使しながらキャラクターを縦横無尽に動かしてダンジョンを攻略♪
         </p>
         <p>君はどのレベルまでクリアできるかな？</p>
+        <p>
+          <a
+            href="https://dev.tose2125.net/eeic19pro/"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
+            プログラミング教室のゲームはこちらのサイトで公開しております。
+          </a>
+        </p>
         <dl>
           <dt>場所</dt>
           <dd>
