@@ -7,9 +7,6 @@ script:
   - npm run build
 #  - npm test
 
-before_deploy:
-  - bash bin/before_deploy.sh
-
 deploy:
   provider: pages
   target-branch: build
