@@ -7,9 +7,7 @@ script:
   - npm run build
 #  - npm test
 
-cache:
-  directories:
-    - node_modules
+cache: npm
 
 deploy:
   provider: pages
